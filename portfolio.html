@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cybersécurité | Expert en Sécurité Informatique</title>
+    <meta name="description" content="Portfolio professionnel d'un expert en cybersécurité - Projets SAE, compétences techniques, expériences et expertise en sécurité informatique">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Initialisation du système...</p>
+            <p class="loading-subtext">Chargement du portfolio cybersécurité</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>CyberSec_Portfolio</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <button class="nav-item active" data-section="home">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    Accueil
+                </button>
+                <button class="nav-item" data-section="profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    Profil
+                </button>
+                <button class="nav-item" data-section="experience">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                    Expériences
+                </button>
+                <button class="nav-item" data-section="sae">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    SAE
+                </button>
+                <button class="nav-item" data-section="skills">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                    </svg>
+                    Compétences
+                </button>
+                <button class="nav-item" data-section="contact">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Contact
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <!-- Terminal Window -->
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="btn red"></div>
+                            <div class="btn yellow"></div>
+                            <div class="btn green"></div>
+                        </div>
+                        <svg class="terminal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4,17 10,11 4,5"/>
+                            <line x1="12" y1="19" x2="20" y2="19"/>
+                        </svg>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">$ whoami</div>
+                        <div class="terminal-line">root@cybersec-portfolio:~#</div>
+                        <div class="terminal-line">$ echo "Bienvenue sur mon portfolio"</div>
+                        <div class="terminal-output" id="typing-text"></div>
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">PORTFOLIO</h1>
+                    <p class="hero-subtitle">Découvrez mon univers de la cybersécurité, mes projets universitaires et mes compétences techniques</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Projets SAE</div>
+                        </div>
+                        <div class="stat-card cyan">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <circle cx="12" cy="16" r="1"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Sécurisé</div>
+                        </div>
+                        <div class="stat-card green">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                            </svg>
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Passion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">PROFIL</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="profile-grid">
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <div class="avatar-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"/>
+                                    <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>France</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                                <span>Étudiant en Cybersécurité</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-content">
+                        <div class="content-card green">
+                            <h3>À PROPOS</h3>
+                            <p>Passionné par la cybersécurité et le développement, je me spécialise dans la protection des systèmes informatiques et la création d'applications sécurisées. Mon parcours universitaire m'a permis de développer une expertise approfondie en sécurité réseau, cryptographie et développement sécurisé.</p>
+                            <p>À travers mes 12 projets SAE (Situations d'Apprentissage et d'Évaluation), j'ai pu mettre en pratique mes connaissances théoriques et développer des compétences techniques solides dans divers domaines de la cybersécurité.</p>
+                        </div>
+
+                        <div class="content-card cyan">
+                            <h3>OBJECTIFS</h3>
+                            <ul class="objectives-list">
+                                <li><span>&gt;</span> Devenir expert en cybersécurité offensive et défensive</li>
+                                <li><span>&gt;</span> Contribuer à la sécurisation des infrastructures critiques</li>
+                                <li><span>&gt;</span> Développer des solutions innovantes en sécurité informatique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">EXPÉRIENCES</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item green">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Stage Cybersécurité</h3>
+                                <span class="timeline-badge">Stage</span>
+                            </div>
+                            <h4>SecureTech Solutions</h4>
+                            <div class="timeline-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2024 - 6 mois</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Paris, France</span>
+                            </div>
+                            <p>Analyse de vulnérabilités, tests de pénétration et mise en place de solutions de sécurité</p>
+                            <div class="tech-tags">
+                                <span>Nmap</span>
+                                <span>Metasploit</span>
+                                <span>Wireshark</span>
+                                <span>Python</span>
+                                <span>Kali Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item cyan">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Projet de Recherche</h3>
+                                <span class="timeline-badge">Académique</span>
+                            </div>
+                            <h4>Université</h4>
+                            <div class="timeline-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2023 - 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Campus Universitaire</span>
+                            </div>
+                            <p>Recherche sur les algorithmes de chiffrement quantique et leur impact sur la cybersécurité</p>
+                            <div class="tech-tags">
+                                <span>Cryptographie</span>
+                                <span>Python</span>
+                                <span>Qiskit</span>
+                                <span>LaTeX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item green">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Développeur Junior</h3>
+                                <span class="timeline-badge">Stage</span>
+                            </div>
+                            <h4>TechStart</h4>
+                            <div class="timeline-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2023 - 3 mois</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lyon, France</span>
+                            </div>
+                            <p>Développement d'applications web sécurisées et audit de code</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>OWASP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAE Section -->
+        <section id="sae" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">PROJETS SAE</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Situations d'Apprentissage et d'Évaluation - 12 projets couvrant tous les aspects de la cybersécurité</p>
+                </div>
+
+                <div class="sae-grid" id="sae-grid">
+                    <!-- SAE cards will be generated by JavaScript -->
+                </div>
+
+                <div class="sae-stats">
+                    <div class="stat-item">
+                        <div class="stat-number green">12</div>
+                        <div class="stat-label">Projets Total</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number cyan">6</div>
+                        <div class="stat-label">Terminés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number yellow">2</div>
+                        <div class="stat-label">En Cours</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple">4</div>
+                        <div class="stat-label">À Venir</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">COMPÉTENCES</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Portfolio technique couvrant cybersécurité, développement et administration système</p>
+                </div>
+
+                <div class="skills-nav">
+                    <button class="skill-nav-btn active" data-category="security">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        Cybersécurité
+                    </button>
+                    <button class="skill-nav-btn" data-category="development">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        Développement
+                    </button>
+                    <button class="skill-nav-btn" data-category="systems">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        Systèmes & Réseaux
+                    </button>
+                    <button class="skill-nav-btn" data-category="database">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                        Bases de Données
+                    </button>
+                </div>
+
+                <div class="skills-content" id="skills-content">
+                    <!-- Skills will be generated by JavaScript -->
+                </div>
+
+                <div class="certifications">
+                    <h3>CERTIFICATIONS & OBJECTIFS</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <h4>CompTIA Security+</h4>
+                            <span class="cert-status progress">En cours</span>
+                            <div class="cert-progress">
+                                <div class="cert-progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <h4>CEH (Certified Ethical Hacker)</h4>
+                            <span class="cert-status planned">Planifié</span>
+                        </div>
+                        <div class="cert-card">
+                            <h4>CISSP</h4>
+                            <span class="cert-status objective">Objectif</span>
+                        </div>
+                        <div class="cert-card">
+                            <h4>OSCP</h4>
+                            <span class="cert-status objective">Objectif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CONTACT</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Prêt à collaborer sur des projets de cybersécurité ou à discuter d'opportunités professionnelles</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card green">
+                            <h3>INFORMATIONS</h3>
+                            <div class="contact-items">
+                                <a href="mailto:contact@cybersec-portfolio.dev" class="contact-item">
+                                    <div class="contact-icon green">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-label">Email</p>
+                                        <p class="contact-value">contact@cybersec-portfolio.dev</p>
+                                    </div>
+                                </a>
+                                <a href="tel:+33123456789" class="contact-item">
+                                    <div class="contact-icon cyan">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-label">Téléphone</p>
+                                        <p class="contact-value">+33 (0)1 23 45 67 89</p>
+                                    </div>
+                                </a>
+                                <div class="contact-item">
+                                    <div class="contact-icon green">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-label">Localisation</p>
+                                        <p class="contact-value">France</p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com" class="contact-item">
+                                    <div class="contact-icon cyan">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-label">GitHub</p>
+                                        <p class="contact-value">github.com/cybersec-dev</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card cyan">
+                            <h3>LIENS RAPIDES</h3>
+                            <div class="quick-links">
+                                <a href="#" class="quick-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14,2 14,8 20,8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10,9 9,9 8,9"/>
+                                    </svg>
+                                    Télécharger CV
+                                </a>
+                                <a href="#" class="quick-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="quick-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Portfolio GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <div class="contact-card green">
+                            <h3>ENVOYER UN MESSAGE</h3>
+                            <div id="form-success" class="form-success" style="display: none;">
+                                ✓ Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                            </div>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                                <circle cx="12" cy="7" r="4"/>
+                                            </svg>
+                                            Nom complet
+                                        </label>
+                                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                                <polyline points="22,6 12,13 2,6"/>
+                                            </svg>
+                                            Email
+                                        </label>
+                                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                        </svg>
+                                        Sujet
+                                    </label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <polyline points="14,2 14,8 20,8"/>
+                                            <line x1="16" y1="13" x2="8" y2="13"/>
+                                            <line x1="16" y1="17" x2="8" y2="17"/>
+                                            <polyline points="10,9 9,9 8,9"/>
+                                        </svg>
+                                        Message
+                                    </label>
+                                    <textarea id="message" name="message" required rows="6" placeholder="Votre message..."></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"/>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                    </svg>
+                                    <span>ENVOYER LE MESSAGE</span>
+                                    <div class="loading-spinner" style="display: none;"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>© 2025 CyberSec Portfolio. Conçu avec <span class="heart">♥</span> et sécurisé par design.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Navigation Dots -->
+    <div class="floating-nav">
+        <button data-section="home" class="nav-dot active" title="Accueil"></button>
+        <button data-section="profile" class="nav-dot" title="Profil"></button>
+        <button data-section="experience" class="nav-dot" title="Expériences"></button>
+        <button data-section="sae" class="nav-dot" title="SAE"></button>
+        <button data-section="skills" class="nav-dot" title="Compétences"></button>
+        <button data-section="contact" class="nav-dot" title="Contact"></button>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="particles">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
